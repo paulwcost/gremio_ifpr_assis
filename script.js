@@ -38,3 +38,33 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     navToggle.classList.remove('active');
   });
 });
+
+
+//caixa de mensagem
+
+  const form = document.getElementById('contato-form');
+  const statusDiv = document.getElementById('status');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        statusDiv.innerHTML = "<p style='color:lightgreen;'>Mensagem enviada com sucesso!</p>";
+        form.reset();
+      } else {
+        statusDiv.innerHTML = "<p style='color:red;'>Erro ao enviar a mensagem.</p>";
+      }
+    }).catch(() => {
+      statusDiv.innerHTML = "<p style='color:red;'>Erro ao enviar a mensagem.</p>";
+    });
+  });
+

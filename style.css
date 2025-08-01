@@ -1,3 +1,8 @@
+/* Espaçamento extra para a seção de eventos */
+.eventos {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 
@@ -408,7 +413,7 @@ main {
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .footer-logo h2 {
@@ -621,6 +626,163 @@ main {
     background-color: #005fa3;
   }
   
+
+  .footer-form {
+    flex: 1 1 240px;
+    max-width: 260px;
+  }
+  
+  .footer-form h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .footer-form input,
+  .footer-form textarea {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.85rem;
+    font-family: inherit;
+    resize: vertical;
+  }
+  
+  .footer-form textarea {
+    min-height: 60px;
+    max-height: 100px;
+  }
+  
+  .footer-form button {
+    background-color: #00bfff;
+    color: white;
+    padding: 8px;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .footer-form button:hover {
+    background-color: #0099cc;
+  }
+
+
+  /* EVENTOS - Seção de Editais e Eventos */
+  .eventos-container {
+    background: #f4f4f4;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(0, 74, 173, 0.08);
+    padding: 2.5rem 1.5rem 2rem;
+    margin: 40px auto 30px;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+  }
+  .eventos-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 1.2rem;
+  }
+  .eventos-header i {
+    font-size: 2.2rem;
+    color: #004aad;
+    background: #e3f0ff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,74,173,0.08);
+  }
+  .eventos-header h2 {
+    font-size: 2rem;
+    color: #004aad;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+  .eventos-desc {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2.2rem;
+    text-align: center;
+  }
+  .eventos-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .evento-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,74,173,0.07);
+    padding: 2rem 1.2rem 1.5rem;
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 1;
+  }
+  .evento-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,74,173,0.13);
+  }
+  .evento-icone {
+    font-size: 2.5rem;
+    color: #00bfff;
+    margin-bottom: 0.7rem;
+    background: #e3f0ff;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,74,173,0.08);
+  }
+  .evento-card h3 {
+    font-size: 1.15rem;
+    color: #004aad;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+  }
+  .evento-card p {
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 1.1rem;
+  }
+  .btn-evento {
+    display: inline-block;
+    background: linear-gradient(90deg, #00bfff 0%, #004aad 100%);
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0,74,173,0.08);
+    transition: background 0.3s, transform 0.3s;
+  }
+  .btn-evento:hover {
+    background: linear-gradient(90deg, #004aad 0%, #00bfff 100%);
+    transform: scale(1.08);
+  }
+
+  @media (max-width: 900px) {
+    .eventos-cards {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .eventos-container {
+      padding: 2rem 0.5rem 1.5rem;
+    }
+  }
 
   /* MEDIA QUERIES */
 

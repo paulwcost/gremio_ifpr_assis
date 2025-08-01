@@ -14,7 +14,7 @@
       <div class="nav-brand">
         <img src="img/img_gremio.png" alt="Logo do Grêmio" />
         <h1>Grêmio Estudantil</h1>
-        <h2>IFPR, <b>Campus</b> Assis Chateaubriand</h2>
+        <h2>IFPR, Campus Assis Chateaubriand</h2>
       </div>
       <button class="nav-toggle" aria-label="Abrir menu">
         <span class="hamburger"></span>
@@ -25,6 +25,7 @@
       <a href="#estatuto">Estatuto</a>
       <a href="#integrantes">Integrantes</a>
       <a href="#sobre">Sobre</a>
+      <a href="#eventos">Eventos</a>
       <a href="#galeria">Galeria</a>
       <a href="#transparencia">Transparência</a>
     </nav>
@@ -51,7 +52,7 @@
     <section class="estatuto" id="estatuto">
       <h2>📄 Estatuto do Grêmio</h2>
       <p>Conheça os direitos, deveres e organização do Grêmio Estudantil. Clique abaixo para acessar o documento completo.</p>
-      <a href="docs/estatutoV3.pdf" target="_blank">Abrir Estatuto</a>
+      <a href="docs/estatuto.pdf" target="_blank">Abrir Estatuto</a>
     </section>
 
     <section class="integrantes" id="integrantes">
@@ -136,6 +137,22 @@
     </section>
 
     <section class="sobre-nos" id="sobre">
+
+    <section class="eventos" id="eventos">
+      <div class="eventos-header" style="margin-bottom:1.2rem;">
+        <i class="fas fa-bullhorn"></i>
+        <h2>Editais e Eventos</h2>
+      </div>
+      <p class="eventos-desc">Fique por dentro dos eventos e editais que o Grêmio está promovendo! Participe, compartilhe e faça parte da nossa história.</p>
+      <div class="evento-card fade-in" style="position:relative;overflow:hidden;max-width:500px;margin:30px auto 0;">
+        <div class="evento-icone" style="font-size:2.2rem;color:#00bfff;background:transparent;border-radius:50%;padding:0;margin-bottom:10px;display:inline-block;position:relative;z-index:2;">
+          <i class="fas fa-music"></i>
+        </div>
+        <h3 style="font-size:1.2rem;color:var(--azul);margin-bottom:0.5rem;font-weight:700;letter-spacing:0.01em;z-index:2;position:relative;">IFestival 2025</h3>
+        <p style="font-size:1rem;color:var(--cinza);margin-bottom:1rem;z-index:2;position:relative;">O IFestival é o maior evento estudantil do IFPR, reunindo música, arte e integração para todos os alunos. Participe!</p>
+        <a href="docs/edital_ifestival.pdf" target="_blank" class="btn-evento" style="font-size:0.95rem;padding:8px 20px;z-index:2;position:relative;border-radius:8px;background:var(--azul);color:#fff;box-shadow:0 2px 8px rgba(0,74,173,0.08);font-weight:bold;">Ver Edital</a>
+      </div>
+    </section>
       <div class="sobre-container">
         <div class="sobre-texto">
           <h2>Quem Somos</h2>
@@ -182,27 +199,6 @@
           <div class="slide">
             <img src="img/img3.jpg" alt="Foto 3">
           </div>
-          <div class="slide">
-            <img src="img/IMG-20241113-WA0058.jpg" alt="Foto 4">
-          </div>
-          <div class="slide">
-            <img src="img/IMG-20250519-WA0000.jpg" alt="Foto 5">
-          </div>
-          <div class="slide">
-            <img src="img/IMG-20250519-WA0004.jpg" alt="Foto 6">
-          </div>
-          <div class="slide">
-            <img src="img/WhatsApp Image 2025-05-19 at 00.25.45 (1).png" alt="Foto 7">
-          </div>
-          <div class="slide">
-            <img src="img/WhatsApp Image 2025-05-19 at 00.25.44.png" alt="Foto 8">
-          </div>
-          <div class="slide">
-            <img src="img/WhatsApp Image 2025-05-19 at 00.25.45.png" alt="Foto 9">
-          </div>
-          <div class="slide">
-            <img src="img/WhatsApp Image 2025-05-19 at 00.25.45 (2).png" alt="Foto 10">
-          </div>
         </div>
         <button class="nav prev"><i class="fas fa-chevron-left"></i></button>
         <button class="nav next"><i class="fas fa-chevron-right"></i></button>
@@ -224,35 +220,53 @@
           <i class="fas fa-receipt"></i>
           <h3>Extratos Bancários</h3>
           <p>Confira mensalmente o uso dos recursos do Grêmio com responsabilidade e clareza.</p>
-          <a href="docs/extrato_bancario.pdf" target="_blank" class="btn-transparencia">Ver Extratos</a>
+          <a href="docs/extratos/" target="_blank" class="btn-transparencia">Ver Extratos</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer-creative">
     <div class="footer-content">
+      <!-- Logo e slogan -->
       <div class="footer-logo">
         <h2>Grêmio Inovação</h2>
         <p>A luta é nossa, a conquista é de todos!</p>
       </div>
+  
+      <!-- Contato fixo -->
       <div class="footer-info">
         <h3>Contato</h3>
         <p><i class="fas fa-envelope"></i> <a href="mailto:gremioifprassis@gmail.com">gremioifprassis@gmail.com</a></p>
       </div>
+  
+      <!-- Redes sociais -->
       <div class="footer-social">
         <h3>Siga-nos</h3>
         <a href="https://www.instagram.com/gremio__inovacao" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
+  
+      <!-- Formulário de mensagem -->
+      <div class="footer-form">
+        <h3>Mande uma mensagem</h3>
+        <form id="contato-form" action="https://formspree.io/f/mdkgbaaj" method="POST">
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" name="_replyto" placeholder="Seu e-mail" required />
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+          <div id="status"></div>
+        </form>
+      </div>
     </div>
+  
     <div class="footer-wave"></div>
     <div class="footer-bottom">
       <p>© 2025 Grêmio Estudantil Inovação – Todos os direitos reservados.</p>
     </div>
   </footer>
+  
   
   
 </body>
